@@ -6,14 +6,40 @@
 % MARGINS All spaces in this template are in inches, because it is formatted for letterpaper (8.5 x 11 inch) paper. 
 \usepackage[margin=0.75in]{geometry}
 % Make better looking tables
+
 \usepackage{booktabs}
 \usepackage{amsmath,amssymb}
 \usepackage[dvipsnames]{xcolor}
-\usepackage{minted}
 \usepackage{comment}
 % Make citation into a hyperlink.
 \usepackage{hyperref}
 \usepackage{ulem} %support the use of sout (strikeout}
+\usepackage{minted}
+\usepackage{caption}
+\usepackage{footnote}
+% Use code environment to add captions to code blocks.
+\newenvironment{code}{\captionsetup{type=listing}}{}
+
+\usepackage[parfill]{parskip} % add blank line between paragraphs
+
+% Enclose equations in a floating enviornment where captions can be added.
+\usepackage{float}
+\floatstyle{plain}
+% How is this used??
+\newfloat{myequation}{H}{eq}[section]
+\floatname{myequation}{Equation}
+
+\usepackage{url}
+\urlstyle{sf}
+%\usepackage{xurl} %This package was causing Overleaf to choke on url's with underscores. Thanks to 
+\usepackage{underscore}
+
+\usepackage[bottom]{footmisc}        % footnotes at the bottom of the page
+%%%%%%%%%%%% enables the addition of images to title page %%%%%%%%%%%%%%
+\usepackage[cc]{titlepic}
+
+
+
 
 % Move the title towards top of page to save paper.
 \title{\vspace {-2cm}Bare bones writing project}
@@ -26,7 +52,32 @@
 
 \section{Introduction}
 
-This paper is popular\cite{Mooers2020ShortcutsForFasterImageCreationInPyMOL}.
+This paper is popular\cite{Mooers2020ShortcutsForFasterImageCreationInPyMOL}. This is a useful equation in crystallography \footnote{\url{https://wiki2.org/en/Sayre_equation}}.
+
+Here is an example of a code listing with a caption.
+
+\begin{code}{}
+    \begin{minted}[frame=lines,
+               framerule=2pt,
+               linenos=true,
+               xleftmargin=\parindent,
+               breaklines]{latex}
+             $$F^2_{\textbf{h}} \propto \sum_{\textbf{k}} F_{\textbf{h}} \cdot F_{\textbf{k}} \cdot F_{\textbf{h-k}} \cdot \rm{exp}( i(\varphi_{\textbf{-h}} + \varphi_{\textbf{k}} + \varphi_{\textbf{h-k}}))$$
+    \end{minted}
+    \caption{Sayre's equation}
+\end{code}
+
+Here is an example of a rendered equation with a caption.
+
+\begin{myequation}
+      $$F^2_{\textbf{h}} \propto \sum_{\textbf{k}} F_{\textbf{h}} \cdot F_{\textbf{k}} \cdot F_{\textbf{h-k}} \cdot \rm{exp}( i(\varphi_{\textbf{-h}} + \varphi_{\textbf{k}} + \varphi_{\textbf{h-k}}) ) $$
+    \caption{Sayre's equation}
+\end{myequation}
+    
+
+
+
+
 
 \newpage
 
