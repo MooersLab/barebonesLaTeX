@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+% compiles with pdflatex 
+\usepackage{helvet} % mimic helvetica or arial
+\renewcommand{\familydefault}{\sfdefault}
+% MARGINS All spaces in this template are in inches, because it is formatted for letterpaper (8.5 x 11 inch) paper. 
+\usepackage[margin=0.75in]{geometry}
+% Make better looking tables
+\usepackage{booktabs}
+\usepackage{amsmath,amssymb}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{minted}
+\usepackage{comment}
+% Make citation into a hyperlink.
+\usepackage{hyperref}
+\usepackage{ulem} %support the use of sout (strikeout}
+
+% Move the title towards top of page to save paper.
+\title{\vspace {-2cm}Bare bones writing project}
+\author{Blaine Mooers}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+This paper is popular\cite{Mooers2020ShortcutsForFasterImageCreationInPyMOL}.
+
+\newpage
+
+% The alternative to bibitems is use BibTex files sourced in the bibliography command.
+% The use of bibitems negates the need to use BibTeX files.
+\begin{thebibliography}{99}
+\bibitem{Mooers2020ShortcutsForFasterImageCreationInPyMOL}
+\newblock Mooers B. H. M.
+\newblock (2020) 
+\newblock Shortcuts for faster image creation in PyMOL. 
+\newblock \emph{Protein Science} 29:268-276.
+\end{thebibliography}
+
+\end{document}
