@@ -5,7 +5,7 @@ This repo contains an example of a simple file template that does not have any e
 Nonetheless, it supports the use of the following features:
 
 * footnotes
-* syntex highlighted code listings
+* syntax highlighted code listings
 * equations
 * figures
 * tables
