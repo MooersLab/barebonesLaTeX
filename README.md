@@ -1,7 +1,11 @@
+![Version](https://img.shields.io/static/v1?label=barebonesLaTeX=0.1&color=brightcolor)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
 # bare bones LaTeX template document
 
 Sometimes you need to prepare just a simple document with LaTeX. 
-This repo contains an example of a simple file template that does not have any external file requirements beyond some standard packages that come with a texlive LaTeX distribution. 
+This repo contains an example of a simple file template with no external file requirements beyond some standard packages in the texlive LaTeX distribution. 
 Nonetheless, it supports the use of the following features:
 
 * footnotes
@@ -11,4 +15,4 @@ Nonetheless, it supports the use of the following features:
 * tables
 * references cited section.
 
-This file could easily evolve into a manuscript or another kind of serious document.
+
