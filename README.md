@@ -15,4 +15,14 @@ Nonetheless, it supports the use of the following features:
 * tables
 * references cited section.
 
+## Funding sources
+
+- NIH: R01 CA242845, R01 AI088011
+- NIH: P30 CA225520 (PI: R. Mannel); P20GM103640 and P30GM145423 (PI: A. West)
+
+## Updates
+
+|Version      | Changes                                                                                                                                    | Date                 |
+|:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
+| Version 0.2 |  Added badges and update table                                                                                                             | 2024 May 3        |
 
